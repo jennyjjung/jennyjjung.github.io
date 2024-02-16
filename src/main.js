@@ -1,3 +1,5 @@
+'use strict';
+
 // window = global object (브라우저에서 기본적으로 제공하는 객체 - 삭제가능)
 // window.document.querySelector
 
