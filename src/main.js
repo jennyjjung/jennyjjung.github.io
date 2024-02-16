@@ -26,3 +26,13 @@ const homeHeight = home.offsetHeight;
 document.addEventListener('scroll', () => {
   home.style.opacity = 1 - window.scrollY / homeHeight;
 })
+
+// 홈 화면에서 Arrow-up 버튼 숨기기
+const arrowUp = document.querySelector('.arrow-up');
+document.addEventListener('scroll', () => {
+  if (window.scrollY < homeHeight / 2) {
+    arrowUp.style.opacity = 0;
+  } else {
+    arrowUp.style.opacity = 1;
+  }
+})
